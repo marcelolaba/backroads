@@ -152,11 +152,82 @@ p {
 Navbar
 ===============
 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  background-color: var(--clr-white);
+}
+.navbar-logo {
+  padding: 1rem 3rem;
+}
+.navbar-items {
+}
+.navbar-items li {
+  display: inline-block;
+  margin: 0 0.4rem;
+}
+.nav-link {
+  font-size: 1rem;
+  color: var(--clr-grey-3);
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+.nav-link:hover {
+  color: var(--clr-primary-5);
+}
+.navbar-social {
+  padding: 1rem 4rem;
+}
+.social-icon {
+  color: var(--clr-primary-5);
+  font-size: 1.2rem;
+  margin: 0 0.25rem;
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--clr-primary-8);
+}
+
 /*
 =============== 
 Hero
 ===============
 */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(hsl(184, 91%, 17%, 0.6), hsl(184, 91%, 17%, 0.6)),
+    url("../images/main.jpeg") center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner h1 {
+  text-transform: uppercase;
+  color: var(--clr-white);
+  text-align: center;
+}
+.hero-banner p {
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  text-align: center;
+}
+.hero-btn {
+  font-size: 1.2rem;
+  padding: 1rem 1.2rem;
+  color: var(--clr-primary-5);
+  background-color: var(--clr-white);
+}
 /*
 =============== 
 About
