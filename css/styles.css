@@ -296,6 +296,23 @@ About
   }
 }
 
+@media screen and (min-width: 1170px) {
+  .about-center {
+    position: relative;
+  }
+  .about-img::before {
+    content: "";
+    border: 8px var(--clr-primary-5) solid;
+    width: calc(50% - 2rem);
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: -1.5rem;
+    top: -1.5rem;
+    z-index: -1;
+  }
+}
+
 /*
 ===============
 Services
