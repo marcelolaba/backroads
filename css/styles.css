@@ -1,12 +1,12 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -46,7 +46,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -147,23 +147,48 @@ p {
   background: var(--clr-primary-8);
 }
 
+.section {
+  padding: 5rem 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+.section-title span {
+  color: var(--clr-primary-5);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
 /*
-=============== 
+===============
 Navbar
 ===============
 */
 .navbar {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100vw;
   background-color: var(--clr-white);
+  box-shadow: var(--dark-shadow);
 }
 .navbar-logo {
   padding: 1rem 3rem;
+  flex-shrink: 0;
 }
 .navbar-items {
+  flex-shrink: 0;
 }
 .navbar-items li {
   display: inline-block;
@@ -180,6 +205,7 @@ Navbar
   color: var(--clr-primary-5);
 }
 .navbar-social {
+  flex-shrink: 0;
   padding: 1rem 4rem;
 }
 .social-icon {
@@ -193,17 +219,26 @@ Navbar
 }
 
 /*
-=============== 
+===============
 Hero
 ===============
 */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(hsl(184, 91%, 17%, 0.6), hsl(184, 91%, 17%, 0.6)),
-    url("../images/main.jpeg") center/cover no-repeat fixed;
+  background: var(--clr-primary-5);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        hsl(184, 91%, 17%, 0.6),
+        hsl(184, 91%, 17%, 0.6)
+      ),
+      url("../images/main.jpeg") center/cover no-repeat fixed;
+  }
 }
 
 .hero-banner {
@@ -224,45 +259,69 @@ Hero
 }
 .hero-btn {
   font-size: 1.2rem;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.5rem;
   color: var(--clr-primary-5);
   background-color: var(--clr-white);
 }
+.hero-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--clr-white);
+  border: 2px solid var(--clr-white);
+}
+
 /*
-=============== 
+===============
 About
 ===============
 */
 /* section add to globals */
-/* title add to globals */
-/* section center add to globals */
+/* title add to globals -> OK */
+/* section center add to globals -> OK */
+.about-info,
+.about-img {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-info,
+  .about-img {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+  }
+}
 
 /*
-=============== 
+===============
 Services
 ===============
 */
 
 /*
-=============== 
+===============
 Featured Tours
 ===============
 */
 
 /*
-=============== 
+===============
 Contact
 ===============
 */
 
 /*
-=============== 
+===============
 Gallery
 ===============
 */
 
 /*
-=============== 
+===============
 Footer
 ===============
 */
