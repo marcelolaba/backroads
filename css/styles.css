@@ -179,6 +179,7 @@ Navbar
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 100;
   width: 100vw;
   background-color: var(--clr-white);
   box-shadow: var(--dark-shadow);
@@ -372,7 +373,7 @@ Services
   .service-info {
     flex: 0 0 82%;
   }
-  p {
+  .service p {
     margin: 0rem;
   }
 }
