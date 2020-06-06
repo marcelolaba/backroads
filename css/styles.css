@@ -318,6 +318,64 @@ About
 Services
 ===============
 */
+#services {
+  background: var(--clr-grey-10);
+}
+
+.service {
+  text-align: center;
+  padding: 1rem 4rem;
+}
+
+.service-icon {
+  font-size: 2rem;
+  background-color: var(--clr-primary-6);
+  padding: 0.5rem;
+  display: inline-block;
+}
+.service-title {
+  margin-top: 1.2rem;
+}
+
+.service-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@media screen and (min-width: 577px) {
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    padding: 0 0.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.33% - 0rem);
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+  }
+  .service-title {
+    margin-top: 0;
+  }
+  .service-info {
+    flex: 0 0 82%;
+  }
+  p {
+    margin: 0rem;
+  }
+}
 
 /*
 ===============
