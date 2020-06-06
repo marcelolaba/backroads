@@ -373,6 +373,9 @@ Services
   .service-info {
     flex: 0 0 82%;
   }
+  .service h4 {
+    margin-bottom: 0.5rem;
+  }
   .service p {
     margin: 0rem;
   }
