@@ -286,7 +286,7 @@ About
 @media screen and (min-width: 992px) {
   .about-center {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
   }
@@ -348,6 +348,7 @@ Services
 
 @media screen and (min-width: 577px) {
   .service {
+    /* max-width: 40rem; */
     flex: 0 0 calc(50% - 1rem);
     padding: 0 0.5rem;
   }
@@ -448,6 +449,18 @@ Featured Tours
   font-weight: lighter;
 }
 
+.featured-tours-footer {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+/* .featured-tours-btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
 /* Responsive */
 @media screen and (min-width: 768px) {
   .tour-card {
@@ -464,24 +477,123 @@ Featured Tours
   }
 }
 
-.featured-tours-btn {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /*
 ===============
 Contact
 ===============
 */
 
+.contact {
+  background-color: var(--clr-primary-5);
+}
+
+.contact-info h3 {
+  color: var(--clr-white);
+}
+.contact-info p {
+  color: var(--clr-primary-8);
+}
+.contact-info p::first-letter {
+  text-transform: uppercase;
+}
+
+.contact-form {
+  display: flex;
+  max-width: 28rem;
+  justify-content: space-between;
+}
+.contact-input {
+  /* 1:crece->OK 
+     1:es lo mismo 
+     auto:va a crecer hasta que pueda */
+  flex: 1 0 auto;
+  border: none;
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-5);
+  letter-spacing: var(--spacing);
+  font-size: 1rem;
+  padding: 0.5rem;
+  /* width: 22rem; */
+}
+.contact-btn {
+  background-color: var(--clr-primary-8);
+  color: black;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: var(--ff-primary);
+  margin-left: 0.5rem;
+}
+.contact-btn:hover {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-primary-5);
+}
+
+/* Responsive */
+@media screen and (min-width: 993px) {
+  .contact-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .contact-form {
+    /* 1:crece->OK 
+       1:es lo mismo 
+       auto:va a crecer hasta que pueda */
+    flex: 1 1 auto;
+    max-width: 100%;
+    margin-left: 2rem;
+  }
+}
+
 /*
 ===============
 Gallery
 ===============
 */
+.gallery-picture-container {
+  background-color: var(--clr-primary-5);
+  position: relative;
+}
+.gallery-icon {
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  opacity: 0;
+  z-index: 3;
+  transition: var(--transition);
+}
+.gallery-picture {
+  z-index: 2;
+  transition: var(--transition);
+}
+.gallery-picture-container:hover .gallery-picture {
+  opacity: 0.5;
+}
+.gallery-picture-container:hover .gallery-icon {
+  opacity: 1;
+}
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-picture-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-picture-container {
+    flex: 0 0 25%;
+  }
+}
 /*
 ===============
 Footer
