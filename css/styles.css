@@ -503,8 +503,8 @@ Contact
   justify-content: space-between;
 }
 .contact-input {
-  /* 1:crece->OK 
-     1:es lo mismo 
+  /* 1:crece->OK
+     1:es lo mismo
      auto:va a crecer hasta que pueda */
   flex: 1 0 auto;
   border: none;
@@ -536,8 +536,8 @@ Contact
     align-items: baseline;
   }
   .contact-form {
-    /* 1:crece->OK 
-       1:es lo mismo 
+    /* 1:crece->OK
+       1:es lo mismo
        auto:va a crecer hasta que pueda */
     flex: 1 1 auto;
     max-width: 100%;
@@ -599,3 +599,36 @@ Gallery
 Footer
 ===============
 */
+.section-footer {
+  background-color: var(--clr-grey-1);
+}
+.footer-navbar-items {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer-navbar-items li {
+  display: inline-block;
+  margin: 0 0.4rem;
+}
+.footer-navbar-items .nav-link {
+  color: var(--clr-white);
+}
+.footer-navbar-items .nav-link:hover {
+  color: var(--clr-primary-5);
+}
+.navbar-social {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.social-icon {
+  color: var(--clr-white);
+  font-size: 2rem;
+  letter-spacing: var(--spacing);
+}
+.footer-center h4 {
+  color: var(--clr-white);
+  font-weight: lighter;
+  padding: 1rem;
+  text-align: center;
+}
