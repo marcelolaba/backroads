@@ -21,11 +21,13 @@
     <nav class="navbar">
       <div class="navbar-logo"><img src="./images/logo.svg" alt="logo" /></div>
       <ul class="navbar-items">
-        <li><a class="nav-link" href="#">home</a></li>
-        <li><a class="nav-link" href="#about">about</a></li>
-        <li><a class="nav-link" href="#services">services</a></li>
-        <li><a class="nav-link" href="#featured-tours">featured</a></li>
-        <li><a class="nav-link" href="#gallery">gallery</a></li>
+        <li><a class="nav-link scroll-link" href="#">home</a></li>
+        <li><a class="nav-link scroll-link" href="#about">about</a></li>
+        <li><a class="nav-link scroll-link" href="#services">services</a></li>
+        <li>
+          <a class="nav-link scroll-link" href="#featured-tours">featured</a>
+        </li>
+        <li><a class="nav-link scroll-link" href="#gallery">gallery</a></li>
       </ul>
       <div class="navbar-social">
         <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
@@ -33,10 +35,25 @@
         <a href="#" class="social-icon"><i class="fab fab fa-instagram"></i></a>
       </div>
       <div class="navBtn">
-        <a href="#" class="nav-icon" id="nav-btn"
-          ><i class="fas fa-bars"></i
-        ></a>
+        <i class="fas fa-bars nav-icon" id="nav-toggle"></i>
       </div>
+    </nav>
+    <nav class="navbar-mobile" id="nav-links">
+      <ul class="navbar-mobile-items">
+        <li><a class="nav-mobile-link scroll-link" href="#">home</a></li>
+        <li><a class="nav-mobile-link scroll-link" href="#about">about</a></li>
+        <li>
+          <a class="nav-mobile-link scroll-link" href="#services">services</a>
+        </li>
+        <li>
+          <a class="nav-mobile-link scroll-link" href="#featured-tours"
+            >featured</a
+          >
+        </li>
+        <li>
+          <a class="nav-mobile-link scroll-link" href="#gallery">gallery</a>
+        </li>
+      </ul>
     </nav>
     <!-- end of Navbar  -->
     <!-- header  -->

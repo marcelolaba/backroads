@@ -16,8 +16,8 @@ navBtn.addEventListener("click", () => {
 // ********** smooth scroll ************
 // select links
 const scrollLinks = document.querySelectorAll(".scroll-link");
-scrollLinks.forEach(link => {
-  link.addEventListener("click", e => {
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     // prevent default
     e.preventDefault();
     links.classList.remove("show-links");
@@ -31,7 +31,7 @@ scrollLinks.forEach(link => {
       left: 0,
       // top: element.offsetTop,
       top: position,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 });
