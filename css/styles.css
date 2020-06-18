@@ -455,6 +455,7 @@ Featured Tours
 }
 .img-container img {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .card-date {
@@ -551,6 +552,18 @@ Contact
   padding: 0.5rem;
   /* width: 22rem; */
 }
+.contact-input::-webkit-input-placeholder {
+  color: inherit;
+}
+.contact-input::-moz-placeholder {
+  color: inherit;
+}
+.contact-input:-ms-input-placeholder {
+  color: inherit;
+}
+.contact-input::-ms-input-placeholder {
+  color: inherit;
+}
 .contact-input::placeholder {
   color: inherit;
 }
@@ -632,9 +645,9 @@ Gallery
   }
 }
 /*
-===============
+================
 Footer
-===============
+================
 */
 .footer {
   background-color: var(--clr-grey-1);
