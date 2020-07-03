@@ -12,6 +12,10 @@ const links = document.getElementById("nav-links");
 navBtn.addEventListener("click", () => {
   links.classList.toggle("show-links");
 });
+// ********** alert for submited ************
+function myFunction() {
+  alert("The form was submitted");
+}
 
 // ********** smooth scroll ************
 // select links
@@ -27,7 +31,7 @@ scrollLinks.forEach((link) => {
     //
     let position = element.offsetTop - 62;
 
-    window.scrollTo({
+    window.scroll({
       left: 0,
       // top: element.offsetTop,
       top: position,
