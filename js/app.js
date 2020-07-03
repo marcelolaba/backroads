@@ -31,11 +31,20 @@ scrollLinks.forEach((link) => {
     //
     let position = element.offsetTop - 62;
 
-    window.scroll({
-      left: 0,
-      // top: element.offsetTop,
-      top: position,
-      behavior: "smooth",
-    });
+    window.setTimeout(function () {
+      window.scroll({
+        left: 0,
+        // top: element.offsetTop,
+        top: position,
+        behavior: "smooth",
+      });
+    }, 0);
+
+    // window.scroll({
+    //   left: 0,
+    //   // top: element.offsetTop,
+    //   top: position,
+    //   behavior: "smooth",
+    // });
   });
 });
